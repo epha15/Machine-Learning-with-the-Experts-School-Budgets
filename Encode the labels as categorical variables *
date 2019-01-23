@@ -1,4 +1,5 @@
-df[LABELS] is a list
+LABELS is a list containing 9 columns that exist in df
+df[LABELS] are calling 9 columns that are assigned as Labels in the exercise
 Note: .astype() only works on a pandas Series. Since you are working with a pandas DataFrame, 
 you'll need to use the .apply() method and provide a lambda function called categorize_label 
 that applies .astype() to each column, x.
