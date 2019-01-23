@@ -1,0 +1,3 @@
+df.dtypes.value_counts(), and not df.value_counts()! 
+Check out the difference in the Shell. df.value_counts() will return an error, 
+because it is a Series method, not a DataFrame method.
