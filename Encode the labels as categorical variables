@@ -1,0 +1,13 @@
+df[LABELS] is a list
+Note: .astype() only works on a pandas Series. Since you are working with a pandas DataFrame, 
+you'll need to use the .apply() method and provide a lambda function called categorize_label 
+that applies .astype() to each column, x.
+
+# Define the lambda function: categorize_label
+categorize_label = lambda x: x.astype('category')
+
+# Convert df[LABELS] to a categorical type
+df[LABELS] = df[LABELS].apply(categorize_label, axis=0)
+
+# Print the converted dtypes
+print(df[LABELS].dtypes)
