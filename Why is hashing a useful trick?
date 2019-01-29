@@ -1,0 +1,3 @@
+Why is hashing a useful trick?
+
+Some problems are memory-bound and not easily parallelizable, and hashing enforces a fixed length computation instead of using a mutable datatype (like a dictionary).
